@@ -13,10 +13,23 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 5rem;
-    padding-bottom: 13em;
+    padding-bottom: 12rem;
     background-position:bottom;
     z-index: 0;
     background-attachment: fixed;
+    text-align: center;
+    color: beige;
+    font-size: 2rem;
+}
+
+header h1 {
+    margin-top: 15rem;
+    padding-bottom: 3rem;
+    text-shadow: 2px 2px #000000
+}
+
+header h2 {
+    text-shadow: 2px 2px #000000
 }
 
 nav {
@@ -29,6 +42,7 @@ nav {
     position: fixed;
     z-index: 100;
     width: 100%;
+    padding: 1rem;
 }
 
 nav a {
@@ -72,7 +86,7 @@ thead {
 }
 
 td {
-    background-color: rgb(179, 209, 209); ;
+    background-color: rgb(179, 209, 209);
 }
 
 table img {
@@ -134,7 +148,6 @@ a > img {
     cursor: pointer;
     transform: scale(1.3);
     transition: 0.3s;
-    opacity: 0.5;
 }
 
 #container > .pics {
@@ -148,16 +161,68 @@ a > img {
     display: flex;
     align-items: center;
     justify-content: center;   
-    padding: 5rem 5rem;
+    padding: 3rem 5rem;
+    text-align: left;
 }
+
 
 .bloque2 {
     text-align: center;
-    padding: 0 5rem;
 }
 
-.bloque2 > h2 {
-    padding-bottom: 3rem;
+.bloque > h2 {
+    padding-right: 5rem;
+}
+
+.bloque div {
+    padding: 3rem 0 0 0;
+    position: relative;
+}
+
+.pag_oficial:hover {
+    background-image: url('../images/pagina_oficial.jpg');
+    transform: scale(1.3);
+}
+
+.natgeo:hover {
+    background-image: url('../images/natgeo.jpg');
+    transform: scale(1.3);
+}
+
+.mondabay:hover {
+    background-image: url('../images/mongabay.jpg');
+    transform: scale(1.3);
+}
+
+.bloque div:hover {
+    transition: 0.3s;
+    background-position:center;
+    background-size: cover;
+    width: 20rem;
+    height: 10rem;
+    border-radius: 5px;
+}
+
+.bloque div:hover a > .capa {
+    opacity: 1;
+    visibility: visible;
+    color: beige;
+}
+
+.bloque div:hover li {
+    visibility: hidden;
+}
+
+
+.bloque  div  a > .capa {
+    position: absolute;
+    top: 0;
+    background-size: cover;
+    background: rgba(11,103,123,0.6);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
 }
 
 
@@ -184,6 +249,37 @@ a > img {
     box-shadow: 5px 5px 5px lightblue; 
 }
 
+#section-map{
+    position: relative;
+    overflow: hidden;
+}
+
+#section-map::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;  
+    padding: 3rem 5rem;
+    background-size: cover;
+    background-image: url('../images/mapa_indo.jpg');
+    opacity: 1;
+    z-index: 0;
+}
+
+#section-map::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgb(192, 201, 112);
+    z-index: 1;
+    opacity: 0.7;
+}
+
+#section-map > .bloque {
+    position:  relative;
+    z-index: 2;
+    color: rgb(171, 209, 4);
+}
 
 form {
     padding: 2rem;
@@ -221,6 +317,16 @@ input {
     background-color: rgb(201, 244, 250);
     color: white;
 }
+
+div h2, li {
+    background-color: black;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
 
 
 

@@ -4,38 +4,43 @@
 }
 
 body {
-    background-color: rgb(233, 245, 255);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(222, 245, 244);
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color:rgb(0, 27, 0); 
 }
 
 header {
     background-image: url('../images/istockphoto-144354164-1024x1024.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 5rem;
-    padding-bottom: 12rem;
-    background-position:bottom;
+    height: 26.5rem;
+    /* padding-bottom: 15rem; */
+    background-position:center;
     z-index: 0;
     background-attachment: fixed;
     text-align: center;
-    color: beige;
+    color:rgb(0, 27, 0);
     font-size: 2rem;
+    
 }
 
 header h1 {
-    margin-top: 15rem;
-    padding-bottom: 3rem;
-    text-shadow: 2px 2px #000000
+    margin-top: 10rem;  
+    text-shadow: 2px 2px beige;
 }
 
 header h2 {
-    text-shadow: 2px 2px #000000
+    text-shadow: 2px 2px #000000;
 }
 
 nav {
     overflow: hidden;
     background-color: rgb(0, 27, 0);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
     font-size: 1.5rem;
     display: flex;
     justify-content: center;
@@ -55,12 +60,13 @@ nav a {
 
 nav a:hover {
     background-color: beige;
-    color: rgb(0, 27, 0);;
+    color: rgb(0, 27, 0);
 }
 
 main {
     padding: 3rem 0 3rem 0;
 }
+
 
 main > h1 {
     text-align: center;
@@ -79,6 +85,7 @@ table, th, td {
     padding: 1rem;
     box-shadow: 5px 5px 5px lightblue; 
 }
+
 
 thead {
     background-color: rgb(0, 27, 0);
@@ -110,6 +117,7 @@ a {
 
 li {
     padding: 0.5rem;
+    list-style-type: none;
 }
 
 
@@ -127,6 +135,21 @@ li {
     justify-content: center;
 }
 
+#container2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 15rem 0 0 0;
+}
+
+#container2 > div {
+    width: 50%;
+}
+
+#container2 > div img {
+    width: 45%;
+}
+
 #container > div img {
     width: 50%;
 }
@@ -141,7 +164,7 @@ a > img {
     object-fit: cover;
     margin: auto;
     border-radius: 10px;
-    box-shadow: 5px 5px 5px lightblue;
+    box-shadow: 5px 5px 5px lightblue; 
 }
 
 #container > a > img:hover {
@@ -156,6 +179,7 @@ a > img {
     border-radius: 0;
     margin: auto;
 }
+
 
 .bloque {
     display: flex;
@@ -198,7 +222,7 @@ a > img {
     transition: 0.3s;
     background-position:center;
     background-size: cover;
-    width: 20rem;
+    width: 15rem;
     height: 10rem;
     border-radius: 5px;
 }
@@ -217,6 +241,7 @@ a > img {
 .bloque  div  a > .capa {
     position: absolute;
     top: 0;
+    left: 0;
     background-size: cover;
     background: rgba(11,103,123,0.6);
     transition: all 500ms ease-out;
@@ -270,7 +295,7 @@ a > img {
     content: "";
     position: absolute;
     inset: 0;
-    background-color: rgb(192, 201, 112);
+    background-color: rgb(225, 240, 161);
     z-index: 1;
     opacity: 0.7;
 }
